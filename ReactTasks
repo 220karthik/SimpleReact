@@ -1,0 +1,109 @@
+
+Task 1
+
+import {useState} from "react";
+
+
+
+
+function Greeting(){
+   const [Name,setName] = useState("Hello World");
+   function Dot(){
+       setName("hello React");
+   }
+   return(
+
+
+       <>
+           <img src="https://cdn.pixabay.com/photo/2023/09/26/00/09/hibiscus-8276215_640.jpg" alt="Hibiscus Flower"/>
+           <h1>{Name}</h1>
+          <button onClick={() => Dot()}>Click to change</button>
+
+
+
+
+       </>
+
+
+       )
+
+
+}
+export default Greeting;
+
+Task 3
+
+import * as React from 'react';
+import App from "./App.jsx";
+import './practice.css';
+
+
+function Example() {
+   return (
+       <div className="card">
+
+
+<ul>
+   <li>Apple</li>
+   <img src="https://images.pexels.com/photos/1425358/pexels-photo-1425358.jpeg?auto=compress&cs=tinysrgb&w=400"/>
+   <label><p>Apples are among the world's most popular fruits.
+       They grow on the apple tree (Malus domestica), originally from Central Asia. Apples are high in fiber, vitamin C, and various antioxidants.
+       They are also very filling, considering their low calorie count.</p></label>
+   <li>Orange</li>
+   <img src="https://images.pexels.com/photos/461415/pexels-photo-461415.jpeg?auto=compress&cs=tinysrgb&w=400"/>
+   <article><p>The fruit is a modified berry known as a hesperidium, and the flesh is
+       divided into segments called carpels. The usual shape of the sweet-orange fruit is round and the colour of its
+       pulp orange, but there are variations.
+       The mandarin, for example, is distinctly flattened, and the blood orange has red pulp</p></article>
+   <li>Grapes</li>
+   <img src="https://images.pexels.com/photos/3616089/pexels-photo-3616089.jpeg?auto=compress&cs=tinysrgb&w=400"/>
+   <article>
+       <p>
+           Grapes are small berries that grow on vines. One of the world's most versatile and
+           widely cultivated fruits, grapes are used to produce a range of food and beverage products, including wine, raisins, preserves, and juice.
+           The many varieties of grapes come in an assortment of sizes, shapes, and colors.
+       </p>
+   </article>
+   <li>Mango</li>
+   <img src="https://images.pexels.com/photos/31331940/pexels-photo-31331940/free-photo-of-cluster-of-unripe-mangoes-on-a-tree-branch.jpeg?auto=compress&cs=tinysrgb&w=400"/>
+   <article>
+       <p>
+           Mangoes, known as the "king of fruits" and India's national fruit, are a popular tropical fruit, typically oval-shaped,
+           with a skin that can vary from green to yellow, red, and green.
+           They are a fleshy drupe, meaning they have a single large seed, and are enjoyed both ripe and unripe.
+       </p>
+   </article>
+</ul>
+           <footer className="footer"> <div>  All rights reserved to <a href="https://www.pexels.com">Website</a>
+
+
+       </div>
+           </footer>
+
+
+       </div>
+
+
+
+
+
+
+   );
+}
+export default Example;
+
+CSS
+*{
+   background-color:midnightblue;
+}
+.card{
+   color: white;
+   font-family: Castellar;
+
+
+}
+.footer{
+   text-align: center;
+}
+
+
